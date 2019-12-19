@@ -12,6 +12,7 @@ a {
   background-position: 0 .9em;
   background-size: 10px 9px;
   line-height: 1.5em;
+
   /*color: #f2f3f8;*/
 }
 
@@ -41,6 +42,7 @@ html {
 p {
   margin: 0;
   line-height: 5em;
+  
 }
 
 .cell {
