@@ -16,7 +16,12 @@
       "*://*/*",
       "file://*/*"
     ],
-    "js" : ["underline.js"],
+
+    "js" : ["textTags.js",
+      "underline.js"
+            ],
+
+    "css" : ["underline.css"],
     "run_at" : "document_idle"
     }
   ],

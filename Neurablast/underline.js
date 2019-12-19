@@ -7,33 +7,54 @@
 // var x = document.getElementsByClassName("intro");
 // var x = document.querySelectorAll("p.intro");
 
-import textTags from "textTags.js";
+//import textTags from "textTags.js";
+/*
+let xhttp = new XMLHttpRequest();
+xhttp.open("GET", "textTags.json", true);
+xhttp.send();
 
-setTimeout(
+let textTagsJSON = xhttp.responseText;
+alert(textTagsJSON);
 
+*/
+let delayTime = 1000;
+
+setTimeout(() => {
 	textTags.forEach((tag) => {
+
+		console.log("Tag: " + tag.name);
 
 		// Get the class
 		let es = document.getElementsByTagName(tag.name);
 		
 		// Handle elements
-		es.forEach((e) => {
-			let classes = e.getAttribute("class").trim();
+		for (let i = 0; i < es.length; ++i) {
+			let e = es[i];
+
+			// separate text
+			let text = e.innerHTML;
+
+			// pad with span
+			e.innerHTML = "<span class= \"underline underline--stars\"> " + text + "</span>";
+			//e.setAttribute("class", "underline underline--stars")
+			/*let classes = e.getAttribute("class").trim();
+			console.log("Tag found, class name: " + classes);
+
 			if (classes.endsWith(";"))
 			{
 				classes.substr(0, classes.length-1);
 			}
-			classes += ", ";
+			classes += " ";
 
 			// Add attribute
 			classes += tag.class;
-			e.setAttribute("class", classes);
-			});
+			classes += "";
 
-		}),
-	
-		
-	}, 1000);
+			// Set attiribute
+			e.setAttribute("class", classes);*/
+		}
+		});
+	}, delayTime);
 
 /*
 chrome.runtime.onMessage.addListener(

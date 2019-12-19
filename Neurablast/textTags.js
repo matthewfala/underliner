@@ -1,11 +1,9 @@
-let tags = [
-	{name: "h1", class: "underline1"},
-	{name: "h2", class: "underline1"},
-	{name: "h3", class: "underline1"},
-	{name: "h4", class: "underline1"},
-	{name: "h5", class: "underline1"},
-	{name: "h6", class: "underline1"},
-	{name: "p", class: "underline1"},
+let textTags = [
+	{name: "h1", class: "underline underline--stars"},
+	{name: "h2", class: "underline underline--stars"},
+	{name: "h3", class: "underline underline--stars"},
+	{name: "h4", class: "underline underline--stars"},
+	{name: "h5", class: "underline underline--stars"},
+	{name: "h6", class: "underline underline--stars"},
+	{name: "p", class: "underline underline--stars"},
 ];
-
-export default tags
