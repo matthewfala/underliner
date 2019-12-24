@@ -9,7 +9,9 @@
 	Notes:
 	1) Span does not cause a space
 	2) Span is inside of a pNode and controls underline type
-
+	3) Use the following to get chrome extension file dir:
+		chrome.extension.getURL("images/myimage.png");
+		or CSS: 'chrome-extension://__MSG_@@extension_id__/images/main.png'
 
 	Concerns:
 	1) pNodes with <spans> may not line separate correctly. (Skip elems?)
